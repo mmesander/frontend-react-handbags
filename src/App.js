@@ -3,8 +3,11 @@ import theHandyBag from './assets/bag_1.png'
 import theStylishBag from './assets/bag_2.png'
 import theSimpleBag from './assets/bag_3.png'
 import theTrendyBag from './assets/bag_4.png'
+import brand from './assets/brand.png'
+import ourStory from './assets/our_story.png'
 import Button from "./components/Button";
 import Product from "./components/Product";
+import Tile from "./components/Tile";
 import './App.css';
 
 function App() {
@@ -54,6 +57,23 @@ function App() {
                     price="€150,-"
                 />
             </main>
+            <footer>
+                <Tile>
+                    <h2>The Brand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deserunt dolor doloremque ducimus ex odio quae quam rerum sapiente tempora!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque dolores eius eum, maxime numquam quisquam recusandae ut! Earum, placeat.</p>
+                </Tile>
+                <Tile>
+                    <img src={brand} alt="The brand"/>
+                </Tile>
+                <Tile>
+                    <img src={ourStory} alt="Our story"/>
+                </Tile>
+                <Tile>
+                    <h2>Our Story</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi debitis deleniti dignissimos dolores eligendi ipsa magnam natus necessitatibus, numquam, perspiciatis qui repellendus tempora tempore tenetur totam unde ut veritatis vitae.</p>
+                </Tile>
+            </footer>
         </>
     );
 }
