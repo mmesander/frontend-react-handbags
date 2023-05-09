@@ -5,7 +5,7 @@ function Button({buttonType, children, isDisabled}){
         <button type={buttonType} disabled={isDisabled}>
             {children}
         </button>
-    )
+    );
 }
 
 export default Button;

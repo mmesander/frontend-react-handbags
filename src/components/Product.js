@@ -1,12 +1,14 @@
 import React from "react";
 
-function Product(info, image, description, price){
+function Product({info, image, description, price}){
     return(
         <article>
-            <span></span>
-            <img src="" alt=""/>
-            <p></p>
-            <h4></h4>
+            <span>{info}</span>
+            <img src={image} alt={description}/>
+            <p>{description}</p>
+            <h4>{price}</h4>
         </article>
-    )
+    );
 }
+
+export default Product;

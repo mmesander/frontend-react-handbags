@@ -1,6 +1,10 @@
 import React from 'react';
 import theHandyBag from './assets/bag_1.png'
+import theStylishBag from './assets/bag_2.png'
+import theSimpleBag from './assets/bag_3.png'
+import theTrendyBag from './assets/bag_4.png'
 import Button from "./components/Button";
+import Product from "./components/Product";
 import './App.css';
 
 function App() {
@@ -25,12 +29,30 @@ function App() {
                 />
             </nav>
             <main>
-                <article>
-                    <span>Best seller</span>
-                    <img src={theHandyBag} alt="The handy bag"/>
-                    <p>The handy bag</p>
-                    <h4>€400,-</h4>
-                </article>
+                <Product
+                    info="Best seller"
+                    image={theHandyBag}
+                    description="The handy bag"
+                    price="€400,-"
+                />
+                <Product
+                    info="Best seller"
+                    image={theStylishBag}
+                    description="The stylish bag"
+                    price="€250,-"
+                />
+                <Product
+                    info="New collection"
+                    image={theSimpleBag}
+                    description="The simple bag"
+                    price="€300,-"
+                />
+                <Product
+                    info="New collection"
+                    image={theTrendyBag}
+                    description="The trendy bag"
+                    price="€150,-"
+                />
             </main>
         </>
     );
